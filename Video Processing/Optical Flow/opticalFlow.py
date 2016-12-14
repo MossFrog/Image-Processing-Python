@@ -14,7 +14,7 @@ def draw_flow(img, flow, step=16):
     cv2.polylines(visualization, lines, 0, (255, 0, 0))
     # Add a dot at each given point for a static reference point
     for (x1, y1), (x2, y2) in lines:
-        cv2.circle(vis, (x1, y1), 1, (255, 0, 255), -1)
+        cv2.circle(visualization, (x1, y1), 1, (255, 0, 255), -1)
     return visualization
 
 # Import sys for access to the hardware of the host machine
